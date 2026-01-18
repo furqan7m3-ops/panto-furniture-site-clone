@@ -285,6 +285,10 @@ body{
     .hero-text{
         margin-top: 15rem;
     }
+
+    .hero-description{
+        margin-top: 0.1rem;
+    }
 }
 
 
