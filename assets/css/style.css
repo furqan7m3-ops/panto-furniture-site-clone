@@ -282,13 +282,6 @@ body{
     .nav{
         padding: 2rem 1rem;
     }
-    .hero-text{
-        margin-top: 15rem;
-    }
-
-    .hero-description{
-        margin-top: 0.1rem;
-    }
 }
 
 
@@ -321,5 +314,13 @@ body{
     }
     .hero-input-wrapper > img{
         width: 20px;
+    }
+
+    .hero-text{
+        margin-top: 15rem;
+    }
+
+    .hero-description{
+        margin-top: 0.1rem;
     }
 }
