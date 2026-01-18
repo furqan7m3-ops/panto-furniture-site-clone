@@ -8,10 +8,13 @@
 
 :root{
     --text-color-dark: #1e1e1e;
+    --heading-dark: #0D1B39;
     --text-color-light: white;
     --accent-color: #E58411;
+    --accent-secondary:#0D1B39;
     --bg-primary: white;
     --bg-secondary: #EEEEEE;
+    --small-text-color:#8D8D8D;
 }
 
 body{
@@ -129,7 +132,7 @@ body{
     padding: 0.2rem;
 }
 
-.feature > button{
+.arrow-btn{
     margin-top: 0.8rem;
     display: flex;
     background: transparent;
@@ -145,28 +148,106 @@ body{
 }
 
 .best-products{
-    display: grid;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color:#F7F7F7;
     color: var(--text-color-dark);
     padding: 3rem;
     gap: 1rem;
 }
 
+.product-tagline{
+    font-size: 2rem;
+}
+
 .products-tab{
     display: flex;
     list-style: none;
+    align-items: center;
     gap: 1rem;
     padding: 0.5rem 1rem;
     border-radius: 50px;
     background-color: var(--bg-secondary);
+    margin-bottom: 1rem;
 }
 
 .products-tab > li:first-child{
     background-color: var(--bg-primary);
-    border-radius: 25px;
+    border-radius: 15px;
+    height: 100%;
+    display: block;
+    padding: 5px 10px;
 }
 
+.best-products > .products{
+    margin-top: 1rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+
 .product{
-    
+    display: grid;
+    justify-content: center;
+}
+
+.product > img{
+    max-width: 100%;
+    width: 70%;
+}
+
+.product-type{
+    color: var(--small-text-color);
+}
+
+.product-title{
+    color: var(--heading-dark);
+}
+.product-description{
+    background-color: var(--bg-primary);
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+.product-rating img{
+    max-width: 10px;
+}
+
+.product-price{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-price > span{
+    color: var(--text-color-dark);
+    font-weight: 600;
+    font-size: 1.1rem;
+
+}
+.product-price > button{
+    border-radius: 50%;
+    border: none;
+    background-color: var(--accent-secondary);
+    color: var(--text-color-light);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    padding: 12px;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-btn > img{
+    width: 20px;
+}
+
+.product-btn{
+    margin-top: 1.2rem;
+    gap: 10px;
 }
