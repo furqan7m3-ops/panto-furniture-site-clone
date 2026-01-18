@@ -5,10 +5,10 @@ This is a template for furniture website. It is a completely static website.
 
 ## Screenshots
 Below is the screenshot of project
-**Desktop**
+### Desktop
 ![Desktop Version](./screenshots/Desktop.jpeg)
 
-**Mobile**
+### Mobile
 ![Mobile Version](./screenshots/Mobile.jpeg)
 
 ## Tools or Languages Used
