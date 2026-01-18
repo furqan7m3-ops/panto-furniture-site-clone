@@ -48,6 +48,17 @@ body{
     gap: 1.5rem;
 }
 
+
+.nav-list-item{
+    transition: color 200ms ease;
+}
+
+.nav-list-item:hover{
+    cursor: pointer;
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
 .hero{
     background:linear-gradient(to right, rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url('../images/hero-section.png');
     background-position: center;
@@ -215,6 +226,7 @@ body{
     background-color: var(--bg-primary);
     padding: 1rem;
     border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .product-rating img{
@@ -258,12 +270,46 @@ body{
     gap: 10px;
 }
 
-@media (max-width:475px) {
+
+@media (max-width:720px) {
     :root{
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .hero-title{
-        font-size: 2.3rem;
+        font-size: 2.8rem;
+    }
+}
+
+
+@media (max-width: 520px) {
+    :root{
+        font-size: 13px;
+    }
+
+    .hero-title{
+        font-size: 2.4rem;
+    }
+}
+
+
+@media (max-width:375px) {
+    :root{
+        font-size: 10px;
+    }
+
+    .hero-title{
+        font-size: 2.1rem;
+    }
+
+    .hero-description{
+        font-size: 0.9rem;
+    }
+
+    #hero-search{
+        font-size: 0.8rem;
+    }
+    .hero-input-wrapper > img{
+        width: 20px;
     }
 }
