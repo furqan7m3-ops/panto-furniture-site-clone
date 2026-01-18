@@ -1,8 +1,7 @@
 # Panto Furniture Site template
 
 # Overview
-This is a template clone for a furniture site.
-
+This is a template for furniture website. It is a completely static website.
 
 ## Screenshots
 Below is the screenshot of project
