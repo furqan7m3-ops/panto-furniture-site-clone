@@ -116,6 +116,7 @@ body{
 
 .feature-description{
     color: var(--text-color-dark);
+    font-weight: 300;
 }
 
 .feature-question{
@@ -157,6 +158,10 @@ body{
     gap: 1.2rem;
     color: var(--accent-color);
     cursor: pointer;
+}
+
+.arrow-btn > img{
+    width: 2rem;
 }
 
 .feature > button > img{
@@ -270,6 +275,44 @@ body{
     gap: 10px;
 }
 
+
+.product-experience{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: 1fr;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.product-experience > img{
+    align-self: stretch;
+    max-width: 100%;
+    height: auto;
+}
+
+.product-experience-text{
+    padding: 2rem;
+}
+
+.product-experience-text > span{
+    color: var(--accent-color);
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.product-experience-text > h2{
+    text-transform: capitalize;
+    color:var(--heading-dark);
+    font-size: 1.8rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.product-experience-text > p{
+    color: var(--text-color-dark);
+    font-weight: 300;
+}
 
 @media (max-width:720px) {
     :root{
