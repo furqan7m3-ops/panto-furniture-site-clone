@@ -45,13 +45,21 @@ body{
 .nav-list{
     list-style-type: none;
     display: flex;
-    gap: 1.5rem;
+    gap: 3.8rem;
 }
 
 
 .nav-list-item{
     transition: color 200ms ease;
+    display: flex;
+    align-items: end;
+    gap: 3px;
 }
+
+.nav-list-item > img{
+    max-width: 20px;
+}
+
 
 .nav-list-item:hover{
     cursor: pointer;
@@ -204,9 +212,7 @@ body{
 .best-products > .products{
     margin-top: 1rem;
     width: 100%;
-    display: grid;
     gap: 1.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 
@@ -276,32 +282,32 @@ body{
 }
 
 
-.product-experience{
+.product-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-template-rows: 1fr;
     gap: 2rem;
     padding: 2rem;
+    grid-template-rows: 1fr;
 }
 
-.product-experience > img{
+.product-container > img{
     align-self: stretch;
     max-width: 100%;
     height: auto;
 }
 
-.product-experience-text{
+.product-container-text{
     padding: 2rem;
 }
 
-.product-experience-text > span{
+.product-container-text > span{
     color: var(--accent-color);
     text-transform: uppercase;
     display: block;
     margin-bottom: 1rem;
 }
 
-.product-experience-text > h2{
+.product-container-text > h2{
     text-transform: capitalize;
     color:var(--heading-dark);
     font-size: 1.8rem;
@@ -309,9 +315,123 @@ body{
     margin-bottom: 1rem;
 }
 
-.product-experience-text > p{
+.product-container-text > p{
     color: var(--text-color-dark);
     font-weight: 300;
+}
+
+
+.image-container{
+    order: 1;
+    display: grid;
+    grid-template-areas: 
+    "image1 image3" 
+    "image2 image3";
+    justify-items: stretch;
+    gap: 2.5rem;
+}
+
+.image-container > img{
+    max-width: 100%;
+    height: auto;
+}
+
+.image-container > img:nth-child(1){
+    grid-area: image1;
+    max-width: 200px;
+}
+
+
+.image-container > img:nth-child(2){
+    grid-area: image2;
+    max-width: 200px;
+}
+
+
+.image-container > img:nth-child(3){
+    grid-area: image3;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+}
+
+.testimonials.grid-container{
+    padding: 2.5rem;
+    gap: 3.5rem;
+}
+
+.testimonial{
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 2rem;
+    padding: 2rem;
+    position: relative;
+    background-color: white;
+    grid-row: -2 / -1;
+    display: grid;
+}
+
+.testimonial-profile-image{
+    position: absolute;
+    border-radius: 50%;
+    top: -35px; /*keep this in px unit so that i stays in the top place even if the screen size is reduces we can also use rem here*/
+    left: 50%;
+    background-color: transparent;
+    transform:translateX(-50%);
+}
+.testimonial-name{
+    font-weight: 600;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.testimonial-role{
+    font-size: 0.7rem;
+    color: var(--small-text-color);
+    text-align: center;
+}
+
+.testimonial > blockquote > p, .testimonial > .product-rating{
+    text-align: center;
+}
+
+.testimonial > blockquote > p{
+    color: var(--text-color-dark);
+    font-weight: 300;
+}
+.testimonial-tag{
+    text-align: center;
+    margin-block: 1.5rem;
+}
+
+.testimonials-title{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.testimonial-wrapper{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    padding:1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1.5rem;
+}
+
+.testimonial-wrapper:first-child{
+    background: url('../images/testimonials-bg/testimonial_bg1.png');
+}
+
+.testimonial-wrapper:nth-child(2){
+    background: url('../images/testimonials-bg/testimonial_bg2.png');
+}
+
+.testimonial-wrapper:last-child{
+    background: url('../images/testimonials-bg/testimonial_bg3.png');
 }
 
 @media (max-width:720px) {

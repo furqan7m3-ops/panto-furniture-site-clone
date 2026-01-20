@@ -13,11 +13,12 @@
         <nav class="nav">
             <span class="nav-logo">Panto</span>
             <ul class="nav-list">
-                <li class="nav-list-item"><span>Furniture</span></li>
+                <li class="nav-list-item"><span>Furniture</span> <img src="./assets/images/keyboard-arrow-down.png" alt="arrow-down-icon-white"></li>
                 <li class="nav-list-item"><span>Shop</span></li>
                 <li class="nav-list-item"><span>About Us</span></li>
                 <li class="nav-list-item"><span>Contact</span></li>
             </ul>
+            <img src="./assets/images/shopping-bag-white.png" alt="shopping-bag-icon">
         </nav>
     </header>
 
@@ -63,7 +64,7 @@
             <li class="product-list-item">Sofa</li>
             <li class="product-list-item">Lamp</li>
         </ul>
-        <article class="products">
+        <article class="products grid-container">
             <section class="product">
                 <img src="./assets/images/chairs/chair1.png" alt="chair-image">
                 <section class="product-description">
@@ -136,15 +137,130 @@
         <button class="arrow-btn product-btn">View Info <img src="./assets/images/arrow.png" alt="arrow-icon"></button>
     </section>
 
-    <section class="product-experience">
-        <img src="./assets/images/room.png" alt="room-image">
-        <div class="product-experience-text">
+    <section class="product-container product-experience">
+        <img src="./assets/images/rooms/room.png" alt="room-image">
+        <div class="product-container-text product-experience-text">
             <span>Experiences</span>
             <h2>we provide you the best experience</h2>
-            <p>You don’t have to worry about the result because all of these interiors are made by people who are professionals in their fields with an elegant and lucurious style and with premium quality materials</p>                
+            <p>You don’t have to worry about the result because all of these interiors are made by people who are
+                professionals in their fields with an elegant and lucurious style and with premium quality materials</p>
             <button class="arrow-btn">More Info <img src="./assets/images/arrow.png" alt="arrow-icon"></button>
         </div>
     </section>
+
+    <section class="product-container product-materials">
+        <div class="image-container">
+            <img src="./assets/images/rooms/room2.png" alt="room2-image">
+            <img src="./assets/images/rooms/room3.png" alt="room3-image">
+            <img src="./assets/images/rooms/room4.png" alt="room4-image">
+        </div>
+        <div class="product-container-text">
+            <span>Materials</span>
+            <h2>very serious materials for making furniture</h2>
+            <p>Because panto was very serious about designing furniture for our environment, using a very expensive and
+                famous capital but at a relatively low price</p>
+            <button class="arrow-btn">More Info <img src="./assets/images/arrow.png" alt="arrow-icon"></button>
+        </div>
+    </section>
+
+    <section class="product-container product-testimonials">
+        <div class="product-container-text testimonial-text">
+            <span class="testimonial-tag">testimonials</span>
+            <h2 class="testimonials-title">our client reviews</h2>
+            <section class="testimonials grid-container">
+                <div class="testimonial-wrapper">
+                    <section class="testimonial">
+                        <img class="testimonial-profile-image"
+                            src="./assets/images/testimonials-profiles/testimonial1.png"
+                            alt="testimonial-profile-image">
+                        <p class="testimonial-name">Bang Upin</p>
+                        <p class="testimonial-role">Pedagang Asongan</p>
+                        <blockquote>
+                            <p>“Terimakasih banyak, kini ruanganku menjadi lebih mewah dan terlihat mahal“</p>
+                        </blockquote>
+                        <div class="product-rating">
+                            <img src="./assets/images/star.png" alt="start-icon">
+                            <img src="./assets/images/star.png" alt="start-icon">
+                            <img src="./assets/images/star.png" alt="start-icon">
+                            <img src="./assets/images/star.png" alt="start-icon">
+                            <img src="./assets/images/star.png" alt="start-icon">
+                        </div>
+                    </section>
+                </div>
+
+                <div class="testimonial-wrapper">
+                    <section class="testimonial">
+                        <img class="testimonial-profile-image"
+                            src="./assets/images/testimonials-profiles/testimonial2.png"
+                            alt="testimonial-profile-image">
+                        <p class="testimonial-name">Ibuk Sukijan</p>
+                        <p class="testimonial-role">Ibu Rumah Tangga</p>
+                        <blockquote>
+                            <p>“Makasih Panto, aku sekarang berasa tinggal di apartment karena barang-barang yang
+                                terlihat mewah“</p>
+                        </blockquote>
+                        <div class="product-rating">
+                            <img src="./assets/images/star.png" alt="start-icon">
+                            <img src="./assets/images/star.png" alt="start-icon">
+                            <img src="./assets/images/star.png" alt="start-icon">
+                            <img src="./assets/images/star.png" alt="start-icon">
+                        </div>
+                    </section>
+                </div>
+
+                <div class="testimonial-wrapper">
+                    <section class="testimonial">
+                        <img class="testimonial-profile-image"
+                            src="./assets/images/testimonials-profiles/testimonial3.png"
+                            alt="testimonial-profile-image">
+                        <p class="testimonial-name">Mpok Ina</p>
+                        <p class="testimonial-role">Karyawan Swasta</p>
+                        <blockquote>
+                            <p>“Sangat terjangkau untuk kantong saya yang tidak terlalu banyak“</p>
+                        </blockquote>
+                        <div class="product-rating">
+                            <img src="./assets/images/star.png" alt="start-icon">
+                            <img src="./assets/images/star.png" alt="start-icon">
+                            <img src="./assets/images/star.png" alt="start-icon">
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <footer>
+        <section class="about">
+            <h2 class="about-title">Panto</h2>
+            <p class="about-description">The advantages of hiring the workspace with us is that gives you comfortable service and all-around facilities</p>
+        </section>
+        <section class="services">
+            <h2 class="">Services</h2>
+            <ul class="services-list">
+                <li class="service-list-item">Email Marketing</li>
+                <li class="service-list-item">Campaigns</li>
+                <li class="service-list-item">Branding</li>
+            </ul>
+        </section>
+
+        <section class="furnitures">
+            <h2>Furniture</h2>
+            <ul class="furniture-list">
+                <li class="furniture-list-item">Beds</li>
+                <li class="furniture-list-item">Chair</li>
+                <li class="furniture-list-item">All</li >
+            </ul>
+        </section>
+
+        <section class="social-links">
+            <h2>Follow Us</h2>
+            <ul class="links">
+                <li class="link">Facebook</li>
+                <li class="link">Twitter</li>
+                <li class="link">Instagram</li>
+            </ul>
+        </section>
+    </footer>
     <div class="attribution">
         <a href="https://fonts.google.com/icons">Icons by google font icons</a>
     </div>
