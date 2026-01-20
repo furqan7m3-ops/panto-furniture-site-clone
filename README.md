@@ -9,6 +9,7 @@ Below is the screenshot of project
 ![Desktop Version](./screenshots/Desktop.jpeg)
 
 ### Mobile
+Needs to be adjusted a little
 ![Mobile Version](./screenshots/Mobile.jpeg)
 
 ## Tools or Languages Used
