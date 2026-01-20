@@ -465,6 +465,10 @@ body{
     font-weight: 300;
 }
 
+.close-menu{
+    display: none;
+}
+
 @media (max-width:720px) {
     :root{
         font-size: 14px;
@@ -479,6 +483,22 @@ body{
 }
 
 
+@media (max-width: 630px){
+    .close-menu{
+        display: block;
+    }
+    
+    .shopping-bag-icon{
+        display: block;
+        margin-left:auto;
+        margin-right:1.5rem;
+    }
+
+    
+    .nav-list{
+         display: none;
+    }
+}
 @media (max-width: 520px) {
     :root{
         font-size: 13px;
